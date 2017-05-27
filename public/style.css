@@ -1,0 +1,24 @@
+#container {
+  width: 100%;
+  display: table;
+}
+#cont2 {
+  display: table-row;
+  margin: 10px;
+}
+#cont, #outputDiv {
+  float: left;
+  display: table-cell;
+
+}
+#searchDiv {
+  display: table-cell;
+  float: right;
+}
+h1 {
+  color: red;
+}
+
+#show {
+  position: absolute;
+}

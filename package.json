@@ -1,0 +1,24 @@
+{
+  "name": "server_side_inv",
+  "version": "1.0.0",
+  "description": "Server Side Inventory == Tech: JQuery, Node, Express, AJAX --- In this project we'll create a project that tracks an inventory on the server.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gunnar34/serverSideInventory.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gunnar34/serverSideInventory/issues"
+  },
+  "homepage": "https://github.com/Gunnar34/serverSideInventory#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
+  }
+}
