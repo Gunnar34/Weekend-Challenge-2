@@ -1,26 +1,13 @@
-Server Side Inventory
+Weekend Project 2
 ==
 Tech: JQuery, Node, Express, AJAX
 ---
-In this project we'll create a project that tracks an inventory on the server. 
-
-Base Mode:
-==
-
-The project will allow users to view items in the inventory, add items to the inventory, and search for items by name. Inventory items will be objects that are held in a server side array.
-
-- view: GET, returns the full array of inventory
-- add: POST, receives a new object, adds it to the existing inventory
-- search: POST, receives a string that we'll check against existing objects in the inventory & returns an array of matches (hint: research the  STRING.includes JS method)
-
-Hard Mode:
-==
-
-- clear appropriate input(s) on successful add
-- clear appropriate search input(s) on search completion
-
-Pro Mode:
-==
-- add search functionality for description
-- display "no matches" if empty array is returned for a search
-- "remove" button for each item that makes use of a DELETE route on inventory controller
+In this project I've created a project that calculates basic mathematics through use of a server.
+Currently the application takes in two variables through input boxes that can be accessed with typing
+or button clicks, it then packages the numbers into objects, depending on which mathematic operation button
+was clicked, it then assigns a type value, so the server knows which operation to preform. these
+numbers are packaged as objects and sent to the server where it unpacks them and checks what type they
+are so it knows which operation to preform. It then preforms the operation and sends the final result back
+as an object. The client then takes this information, appends Calculating to the display, sets a timer for
+2.5 seconds and then fades the div containing Calculation out, empties it, places the result, and fades
+the div back in.

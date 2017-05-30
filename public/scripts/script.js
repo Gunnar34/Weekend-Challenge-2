@@ -39,10 +39,18 @@ function math(){
     success: function( response ){
       console.log( 'back from post: ', response);
       $('#outputDiv').empty();
-      $('#outputDiv').append('<p id=number>' + response.result + '</p>');
-    }
-  });
+      $('#outputDiv').append('<h1>Calculating<h1>');
+      setTimeout(function(){
+        $('#outputDiv').fadeOut( function(){
+          $('#outputDiv').empty();
+          $('#outputDiv').append('<p id=number>' + response.result + '</p>');
+          $('#outputDiv').fadeIn();
+        });
+      }, 2500
+    );
   }
+});
+}
 
 function numberSelectInput1(){
       var number = $(this).val();
