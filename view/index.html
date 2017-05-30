@@ -6,20 +6,54 @@
     <script src="scripts/script.js" charset="utf-8"></script>
     <link rel='stylesheet' href='style.css'>
     <title></title>
-    <h1>Server Inventory Madness</h1>
+    <h1>Server Calculator</h1>
   </head>
   <body>
+    <div id='inputfieldfor1'>
+      <p id='button1'>Select first Numbers</p>
+      <button type='number' value='0' class='calc'>0</button>
+      <button type='number' value='1' class='calc'>1</button>
+      <button type='number' value='2' class='calc'>2</button>
+      <button type='number' value='3' class='calc'>3</button>
+      <br>
+      <button type='number' value='4' class='calc'>4</button>
+      <button type='number' value='5' class='calc'>5</button>
+      <button type='number' value='6' class='calc'>6</button>
+      <button type='number' value='7' class='calc'>7</button>
+      <br>
+      <button type='number' value='8' class='calc'>8</button>
+      <button type='number' value='9' class='calc'>9</button>
+      <button id='switch'>Switch</button>
+    </div>
+    <div id='inputfieldfor2'>
+      <p id='button1'>Select Second Numbers</p>
+      <button type='number' value='0' class='calc'>0</button>
+      <button type='number' value='1' class='calc'>1</button>
+      <button type='number' value='2' class='calc'>2</button>
+      <button type='number' value='3' class='calc'>3</button>
+      <br>
+      <button type='number' value='4' class='calc'>4</button>
+      <button type='number' value='5' class='calc'>5</button>
+      <button type='number' value='6' class='calc'>6</button>
+      <button type='number' value='7' class='calc'>7</button>
+      <br>
+      <button type='number' value='8' class='calc'>8</button>
+      <button type='number' value='9' class='calc'>9</button>
+      <button id='switch2'>Switch</button>
+    </div>
         <input id='input' placeholder='number 1'>
         <input id='input2' placeholder='number 2'>
-        <button id='addButton'>add</button>
-        <button id='search'>subtract</button>
-        <button id='search'>multiply</button>
-        <button id='search'>divide</button>
+        <br>
+        <button id='addButton' class='other'>add</button>
+        <button id='subButton' class='other'>subtract</button>
+        <button id='multButton' class='other'>multiply</button>
+        <button id='divButton' class='other'>divide</button>
         <div id='container'>
           <div id='cont2'>
             <div id='cont'>
               <h2>Result</h2>
-              <button id='show'>Clear Results</button>
+              <button id='clear' class='other'>Clear Results and Inputs</button>
+              <br>
               <div id='outputDiv'></div>
             </div>
           </div>

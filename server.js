@@ -17,7 +17,7 @@ app.get('/', function(req, res){
   res.sendFile( path.resolve( 'view/index.html' ) );
 });
 
-app.post( '/allData', function( req, res ){
+app.post( '/mathAdd', function( req, res ){
   console.log( 'post hit to /allData: ', req.body );
   var x = req.body.number1;
   var y = req.body.number2;
@@ -25,6 +25,45 @@ app.post( '/allData', function( req, res ){
   var number2 = parseInt(y);
   var resultOfAdd = {
     result: number1 + number2
+  };
+  console.log(resultOfAdd);
+  res.send(resultOfAdd);
+});
+
+app.post( '/mathSub', function( req, res ){
+  console.log( 'post hit to /allData: ', req.body );
+  var x = req.body.number1;
+  var y = req.body.number2;
+  var number1 = parseInt(x);
+  var number2 = parseInt(y);
+  var resultOfAdd = {
+    result: number1 - number2
+  };
+  console.log(resultOfAdd);
+  res.send(resultOfAdd);
+});
+
+app.post( '/mathMult', function( req, res ){
+  console.log( 'post hit to /allData: ', req.body );
+  var x = req.body.number1;
+  var y = req.body.number2;
+  var number1 = parseInt(x);
+  var number2 = parseInt(y);
+  var resultOfAdd = {
+    result: number1 * number2
+  };
+  console.log(resultOfAdd);
+  res.send(resultOfAdd);
+});
+
+app.post( '/mathDiv', function( req, res ){
+  console.log( 'post hit to /allData: ', req.body );
+  var x = req.body.number1;
+  var y = req.body.number2;
+  var number1 = parseInt(x);
+  var number2 = parseInt(y);
+  var resultOfAdd = {
+    result: number1 / number2
   };
   console.log(resultOfAdd);
   res.send(resultOfAdd);
