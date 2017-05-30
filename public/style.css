@@ -23,7 +23,7 @@ h1 {
   position: absolute;
 }
 
-.other {
+.other, .math {
   background-color: #fe921f;
   border: none;
   font-size: 12px;

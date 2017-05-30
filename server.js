@@ -17,54 +17,38 @@ app.get('/', function(req, res){
   res.sendFile( path.resolve( 'view/index.html' ) );
 });
 
-app.post( '/mathAdd', function( req, res ){
+app.post( '/math', function( req, res ){
   console.log( 'post hit to /allData: ', req.body );
   var x = req.body.number1;
   var y = req.body.number2;
   var number1 = parseInt(x);
   var number2 = parseInt(y);
-  var resultOfAdd = {
-    result: number1 + number2
-  };
-  console.log(resultOfAdd);
-  res.send(resultOfAdd);
-});
-
-app.post( '/mathSub', function( req, res ){
-  console.log( 'post hit to /allData: ', req.body );
-  var x = req.body.number1;
-  var y = req.body.number2;
-  var number1 = parseInt(x);
-  var number2 = parseInt(y);
-  var resultOfAdd = {
-    result: number1 - number2
-  };
-  console.log(resultOfAdd);
-  res.send(resultOfAdd);
-});
-
-app.post( '/mathMult', function( req, res ){
-  console.log( 'post hit to /allData: ', req.body );
-  var x = req.body.number1;
-  var y = req.body.number2;
-  var number1 = parseInt(x);
-  var number2 = parseInt(y);
-  var resultOfAdd = {
-    result: number1 * number2
-  };
-  console.log(resultOfAdd);
-  res.send(resultOfAdd);
-});
-
-app.post( '/mathDiv', function( req, res ){
-  console.log( 'post hit to /allData: ', req.body );
-  var x = req.body.number1;
-  var y = req.body.number2;
-  var number1 = parseInt(x);
-  var number2 = parseInt(y);
-  var resultOfAdd = {
-    result: number1 / number2
-  };
-  console.log(resultOfAdd);
-  res.send(resultOfAdd);
+  if (req.body.type.toLowerCase() == 'add' ){
+    var resultOfAdd = {
+      result: number1 + number2
+    };
+    console.log(resultOfAdd);
+    res.send(resultOfAdd);
+    }
+  else if (req.body.type.toLowerCase() == 'sub' ){
+    var resultOfAdd = {
+      result: number1 - number2
+    };
+    console.log(resultOfAdd);
+    res.send(resultOfAdd);
+    }
+  else if (req.body.type.toLowerCase() == 'mult' ){
+    var resultOfAdd = {
+      result: number1 * number2
+    };
+    console.log(resultOfAdd);
+    res.send(resultOfAdd);
+    }
+  else if (req.body.type.toLowerCase() == 'div' ){
+    var resultOfAdd = {
+      result: number1 / number2
+    };
+    console.log(resultOfAdd);
+    res.send(resultOfAdd);
+    }
 });
